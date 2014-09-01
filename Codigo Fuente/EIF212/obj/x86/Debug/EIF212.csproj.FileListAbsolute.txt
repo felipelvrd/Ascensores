@@ -1,0 +1,15 @@
+D:\user\Desktop\so\EIF212\EIF212\bin\Debug\EIF212.exe
+D:\user\Desktop\so\EIF212\EIF212\bin\Debug\EIF212.pdb
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.Controles.ucEdificio.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.Controles.ucEjecutando.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.Controles.ucIndicador.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.Controles.Panel.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.Controles.ucCola.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.Controles.ucPuerta.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.FrmCant.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.FrmPrincipal.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.Properties.Resources.resources
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.csproj.GenerateResource.Cache
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.exe
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.pdb
+D:\user\Desktop\so\EIF212\EIF212\obj\x86\Debug\EIF212.csprojResolveAssemblyReference.cache

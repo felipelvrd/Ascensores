@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{349CD28C-8A92-4D91-89F0-E0D7FEEB50C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EIF212</RootNamespace>
+    <AssemblyName>EIF212</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\EIF212.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\EIF212.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\clFuente.cs" />
+    <Compile Include="Clases\clFunciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\clProceso.cs" />
+    <Compile Include="Clases\clSolicitud.cs" />
+    <Compile Include="Controles\ucEdificio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucEdificio.Designer.cs">
+      <DependentUpon>ucEdificio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucEjecutando.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucEjecutando.Designer.cs">
+      <DependentUpon>ucEjecutando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucIndicador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucIndicador.Designer.cs">
+      <DependentUpon>ucIndicador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucPanel.Designer.cs">
+      <DependentUpon>ucPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucCola.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucCola.designer.cs">
+      <DependentUpon>ucCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucPuerta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucPuerta.designer.cs">
+      <DependentUpon>ucPuerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCant.Designer.cs">
+      <DependentUpon>FrmCant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controles\ucEdificio.resx">
+      <DependentUpon>ucEdificio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucEjecutando.resx">
+      <DependentUpon>ucEjecutando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucIndicador.resx">
+      <DependentUpon>ucIndicador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucPanel.resx">
+      <DependentUpon>ucPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucCola.resx">
+      <DependentUpon>ucCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucPuerta.resx">
+      <DependentUpon>ucPuerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCant.resx">
+      <DependentUpon>FrmCant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\EIF212.Clases.clSolicitud.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elevador1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elevador2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elevador3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elevador4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fipps-Regular.ttf" />
+    <None Include="Resources\n0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n0r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n1r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n2r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n3r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n4r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n5r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n6r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n7r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n8r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n9r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1deshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1habilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2deshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2habilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3deshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3habilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4deshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4habilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5deshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5habilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6deshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6habilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7deshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7habilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8deshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8habilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abreacensor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AZdeshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AZhabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cierraacensor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PBdeshabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PBhabilitado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llaveCancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luz asensor espera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luz asensor libre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luz asensor ocupado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asensorabreocupado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asensorcierraocupado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edificio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llavecancela.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menosicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intro.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
